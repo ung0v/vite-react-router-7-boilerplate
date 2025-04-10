@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { Link } from '@/components/ui/link'
+import { paths } from '@/configs/paths'
 import { ALL_ROUTES } from '@/constants'
 import { cn } from '@/lib/utils'
 
@@ -44,7 +45,7 @@ export function SignInForm({ className, ...props }: UserAuthFormProps) {
 
     setTimeout(() => {
       setIsLoading(false)
-      navigate(ALL_ROUTES.HOME)
+      navigate(paths.app.root.path)
     }, 3000)
   }
 
