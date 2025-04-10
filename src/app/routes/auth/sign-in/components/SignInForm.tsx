@@ -1,11 +1,9 @@
-'use client'
-
 import { HTMLAttributes, useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { useNavigate } from 'react-router'
 
 import { zodResolver } from '@hookform/resolvers/zod'
 import { IconBrandFacebook, IconBrandGithub } from '@tabler/icons-react'
-import { useRouter } from 'next/navigation'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -16,8 +14,8 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form'
-import { Input, PasswordInput } from '@/components/ui/input'
-import Link from '@/components/ui/link'
+import { Input } from '@/components/ui/input'
+import { Link } from '@/components/ui/link'
 import { ALL_ROUTES } from '@/constants'
 import { cn } from '@/lib/utils'
 
@@ -25,12 +23,12 @@ import {
   DEFAULT_VALUES_SIGN_IN_FORM,
   SignInFormSchemaType,
   signInFormSchema,
-} from '../_schemas'
+} from '../schemas'
 
 type UserAuthFormProps = HTMLAttributes<HTMLDivElement>
 
 export function SignInForm({ className, ...props }: UserAuthFormProps) {
-  const router = useRouter()
+  const navigate = useNavigate()
   const [isLoading, setIsLoading] = useState(false)
 
   const form = useForm<SignInFormSchemaType>({
@@ -42,11 +40,11 @@ export function SignInForm({ className, ...props }: UserAuthFormProps) {
     setIsLoading(true)
 
     // eslint-disable-next-line no-console
-    console.log(data)
+    console.log(data, '1')
 
     setTimeout(() => {
       setIsLoading(false)
-      router.push(ALL_ROUTES.HOME)
+      navigate(ALL_ROUTES.HOME)
     }, 3000)
   }
 
@@ -76,14 +74,14 @@ export function SignInForm({ className, ...props }: UserAuthFormProps) {
                   <div className="flex items-center justify-between">
                     <FormLabel>Password</FormLabel>
                     <Link
-                      href="/forgot-password"
+                      to="/forgot-password"
                       className="text-sm font-medium text-muted-foreground hover:opacity-75"
                     >
                       Forgot password?
                     </Link>
                   </div>
                   <FormControl>
-                    <PasswordInput placeholder="********" {...field} />
+                    <Input type="password" placeholder="********" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

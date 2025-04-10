@@ -1,7 +1,7 @@
 import { Card } from '@/components/ui/card'
 import { Link } from '@/components/ui/link'
 
-import { SignInForm } from './_components/SignInForm'
+import { SignInForm } from './components/SignInForm'
 
 const SignInPage = () => {
   return (

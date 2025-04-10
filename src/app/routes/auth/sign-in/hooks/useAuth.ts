@@ -1,6 +1,6 @@
 import { API_ROUTES } from '@/constants'
 import { usePost } from '@/lib/reactQuery'
-import { UserType } from '@/types'
+import { UserType } from '@/types/user'
 
 type AuthRequest = {
   userIdTxt: string

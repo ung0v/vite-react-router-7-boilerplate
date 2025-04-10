@@ -9,7 +9,8 @@ import DialogProvider from '@/contexts/DialogProvider'
 import DrawerProvider from '@/contexts/DrawerProvider'
 import QueryProvider from '@/contexts/QueryProvider'
 import { ThemeProvider } from '@/contexts/ThemeProvider'
-import { AuthLoader } from '@/lib/auth'
+
+// import { AuthLoader } from '@/lib/auth'
 
 type AppProviderProps = {
   children: React.ReactNode
