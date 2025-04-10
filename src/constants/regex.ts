@@ -11,4 +11,4 @@ export const REGEX = {
   PHONE_NUMBER: /^\d{3}-?\d{4}-?\d{4}$/,
   BLOB_URL: /^blob:[\w-]+:\/\/.+\/[a-fA-F0-9-]{36}$/,
   BASE64_URL: /^data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+)?;base64,[A-Za-z0-9+/=]+$/,
-};
+}

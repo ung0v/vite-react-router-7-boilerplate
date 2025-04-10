@@ -27,7 +27,7 @@ export const ConfirmModal = () => {
         confirm()
         options.onAfterOK?.()
       } catch (error) {
-        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+        // eslint-disable-next-line no-console
         __IS_DEV__ && console.log(error)
       } finally {
         setIsLoading(false)

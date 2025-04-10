@@ -1,6 +1,6 @@
-import { Bold, Italic, Underline } from 'lucide-react';
+import { Bold, Italic, Underline } from 'lucide-react'
 
-import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
+import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
 
 export function ToggleGroupDemo() {
   return (
@@ -15,5 +15,5 @@ export function ToggleGroupDemo() {
         <Underline className="h-4 w-4" />
       </ToggleGroupItem>
     </ToggleGroup>
-  );
+  )
 }

@@ -34,7 +34,7 @@ const svgrConfig = {
   // ID collisions with multiple SVG => Solution: https://github.com/pd4d10/vite-plugin-svgr/issues/98#issuecomment-2250076809
   svgoConfig: {
     floatPrecision: 2,
-    plugins: [ 
+    plugins: [
       {
         name: 'convertStyleToAttrs',
       },

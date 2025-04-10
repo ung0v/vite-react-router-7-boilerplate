@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button'
 
 export function ButtonLink() {
-  return <Button variant="link">Link</Button>;
+  return <Button variant="link">Link</Button>
 }

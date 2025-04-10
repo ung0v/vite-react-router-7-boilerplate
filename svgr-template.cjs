@@ -8,7 +8,7 @@ const template = (variables, { tpl }) => {
       );
       
       export default ${variables.componentName};
-    `;
-};
+    `
+}
 
-module.exports = template;
+module.exports = template

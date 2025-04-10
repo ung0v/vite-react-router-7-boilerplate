@@ -1,8 +1,8 @@
-'use client';
+'use client'
 
-import { toast } from 'sonner';
+import { toast } from 'sonner'
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button'
 
 export function SonnerDemo() {
   return (
@@ -13,6 +13,7 @@ export function SonnerDemo() {
           description: 'Sunday, December 03, 2023 at 9:00 AM',
           action: {
             label: 'Undo',
+            // eslint-disable-next-line no-console
             onClick: () => console.log('Undo'),
           },
         })
@@ -20,5 +21,5 @@ export function SonnerDemo() {
     >
       Show Toast
     </Button>
-  );
+  )
 }

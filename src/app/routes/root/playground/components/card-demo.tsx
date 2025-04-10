@@ -1,6 +1,6 @@
-import { BellRing, Check } from 'lucide-react';
+import { BellRing, Check } from 'lucide-react'
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button'
 import {
   Card,
   CardContent,
@@ -8,9 +8,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
-import { Switch } from '@/components/ui/switch';
-import { cn } from '@/lib/utils';
+} from '@/components/ui/card'
+import { Switch } from '@/components/ui/switch'
+import { cn } from '@/lib/utils'
 
 const notifications = [
   {
@@ -25,9 +25,9 @@ const notifications = [
     title: 'Your subscription is expiring soon!',
     description: '2 hours ago',
   },
-];
+]
 
-type CardProps = React.ComponentProps<typeof Card>;
+type CardProps = React.ComponentProps<typeof Card>
 
 export function CardDemo({ className, ...props }: CardProps) {
   return (
@@ -74,5 +74,5 @@ export function CardDemo({ className, ...props }: CardProps) {
         </Button>
       </CardFooter>
     </Card>
-  );
+  )
 }

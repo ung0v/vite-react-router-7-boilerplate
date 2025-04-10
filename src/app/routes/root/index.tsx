@@ -2,9 +2,8 @@ import { Outlet } from 'react-router'
 
 import { PrivateLayout } from '@/components/layouts'
 
-export const ErrorBoundary = (error) => {
-  console.log(error)
-  return <div>Something went wrong!22</div>
+export const ErrorBoundary = () => {
+  return <div>Something went wrong!</div>
 }
 
 const AppRoot = () => {

@@ -8,4 +8,4 @@ export const DATE_FORMAT = {
   EVENT_DATE: 'YY.MM.DD HH:mm',
   DOWNLOAD: 'YYMMDD',
   TIME_ONLY: 'HH:mm',
-};
+}

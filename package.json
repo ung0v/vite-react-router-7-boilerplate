@@ -10,7 +10,7 @@
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
     "prepare": "husky",
-    "format": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
+    "format": "prettier . --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
     "type:checking": "tsc --noEmit",
     "generate-icons": "node ./scripts/generate-icons.cjs && prettier --write ./src/components/icons/*.tsx"
   },

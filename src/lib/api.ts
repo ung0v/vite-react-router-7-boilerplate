@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-empty-object-type */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { AxiosRequestConfig } from 'axios';
+import { AxiosRequestConfig } from 'axios'
 
-import instance from './axios';
+import instance from './axios'
 
 const api = {
   get: async <ReturnType, QueryParamType = any>(
@@ -49,6 +48,6 @@ const api = {
     body?: BodyType,
   ): Promise<ReturnType> =>
     instance.delete(`${url}`, { data: body }).then((res) => res.data),
-};
+}
 
-export default api;
+export default api

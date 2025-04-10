@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button'
 
 export function ButtonOutline() {
-  return <Button variant="outline">Outline</Button>;
+  return <Button variant="outline">Outline</Button>
 }

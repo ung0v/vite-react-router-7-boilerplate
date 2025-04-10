@@ -40,6 +40,7 @@ export function SignInForm({ className, ...props }: UserAuthFormProps) {
 
   function onSubmit(data: SignInFormSchemaType) {
     setIsLoading(true)
+
     // eslint-disable-next-line no-console
     console.log(data)
 
