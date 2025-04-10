@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "prepare": "husky",
     "format": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
-    "type:checking": "tsc --noEmit"
+    "type:checking": "tsc --noEmit",
+    "generate-icons": "node ./scripts/generate-icons.cjs && prettier --write ./src/components/icons/*.tsx"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
@@ -78,6 +79,9 @@
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
     "@eslint/js": "^9.21.0",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
     "@tanstack/eslint-plugin-query": "^5.72.1",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/js-cookie": "^3.0.6",

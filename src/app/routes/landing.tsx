@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router'
 
-import logo from '@/assets/react.svg'
+import ReactIcon from '@/components/icons/ReactIcon'
 import { Head } from '@/components/seo'
 import { Button } from '@/components/ui/button'
 import { paths } from '@/configs/paths'
@@ -20,7 +20,7 @@ const LandingRoute = () => {
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span className="block">Bulletproof React</span>
           </h2>
-          <img src={logo} alt="react" />
+          <ReactIcon />
           <p>Showcasing Best Practices For Building React Applications</p>
           <div className="mt-8 flex justify-center">
             <div className="inline-flex rounded-md shadow">
