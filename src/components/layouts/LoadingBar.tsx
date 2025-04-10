@@ -24,7 +24,7 @@ export function NavigationLoadingBar() {
       shadow={false}
       height={2}
       transitionTime={100}
-      waitingTime={300}
+      waitingTime={550}
     />
   )
 }

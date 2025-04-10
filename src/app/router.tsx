@@ -54,6 +54,49 @@ export const createAppRouter = (queryClient: QueryClient) =>
           lazy: () =>
             import('./routes/root/playground').then(convert(queryClient)),
         },
+        {
+          path: paths.app.settings.getHref(),
+          lazy: () =>
+            import('./routes/root/settings').then(convert(queryClient)),
+          children: [
+            {
+              index: true,
+              path: paths.app.settings.profile.getHref(),
+              lazy: () =>
+                import('./routes/root/settings/profile').then(
+                  convert(queryClient),
+                ),
+            },
+            {
+              path: paths.app.settings.account.getHref(),
+              lazy: () =>
+                import('./routes/root/settings/account').then(
+                  convert(queryClient),
+                ),
+            },
+            {
+              path: paths.app.settings.apperance.getHref(),
+              lazy: () =>
+                import('./routes/root/settings/appearance').then(
+                  convert(queryClient),
+                ),
+            },
+            {
+              path: paths.app.settings.notifications.getHref(),
+              lazy: () =>
+                import('./routes/root/settings/notification').then(
+                  convert(queryClient),
+                ),
+            },
+            {
+              path: paths.app.settings.display.getHref(),
+              lazy: () =>
+                import('./routes/root/settings/display').then(
+                  convert(queryClient),
+                ),
+            },
+          ],
+        },
       ],
     },
     {

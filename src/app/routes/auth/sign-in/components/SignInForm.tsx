@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router'
 
 import { zodResolver } from '@hookform/resolvers/zod'
-import { IconBrandFacebook, IconBrandGithub } from '@tabler/icons-react'
+import { Facebook, Github } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -108,7 +108,7 @@ export function SignInForm({ className, ...props }: UserAuthFormProps) {
                 className="w-full"
                 type="button"
                 disabled={isLoading}
-                icon={<IconBrandGithub className="h-4 w-4" />}
+                icon={<Github className="h-4 w-4" />}
               >
                 GitHub
               </Button>
@@ -117,7 +117,7 @@ export function SignInForm({ className, ...props }: UserAuthFormProps) {
                 className="w-full"
                 type="button"
                 disabled={isLoading}
-                icon={<IconBrandFacebook className="h-4 w-4" />}
+                icon={<Facebook className="h-4 w-4" />}
               >
                 Facebook
               </Button>

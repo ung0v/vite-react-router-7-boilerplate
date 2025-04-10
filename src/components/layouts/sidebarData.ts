@@ -16,6 +16,7 @@ import {
   Wrench,
 } from 'lucide-react'
 
+import { paths } from '@/configs/paths'
 import { SidebarData } from '@/types/nav'
 
 export const sidebarData: SidebarData = {
@@ -92,27 +93,27 @@ export const sidebarData: SidebarData = {
           items: [
             {
               title: 'Profile',
-              url: '/settings',
+              url: paths.app.settings.profile.getHref(),
               icon: Users,
             },
             {
               title: 'Account',
-              url: '/settings/account',
+              url: paths.app.settings.account.getHref(),
               icon: Wrench,
             },
             {
               title: 'Appearance',
-              url: '/settings/appearance',
+              url: paths.app.settings.apperance.getHref(),
               icon: Palette,
             },
             {
               title: 'Notifications',
-              url: '/settings/notifications',
+              url: paths.app.settings.notifications.getHref(),
               icon: Bell,
             },
             {
               title: 'Display',
-              url: '/settings/display',
+              url: paths.app.settings.display.getHref(),
               icon: Monitor,
             },
           ],
